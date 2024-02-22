@@ -12,6 +12,9 @@
     <h1>My Bio</h1>
     <hr>
 </center>
+<ul>
+    <a href="#contact">Contact me</a>
+</ul>
 <ol>
     <li><strong>Name:</strong>Prakash</li>
     <li><strong>D.O.B:</strong>17.02.2005</li>
@@ -48,6 +51,7 @@
     <img src="aboutmelogo.jpeg" alt="Picture" Title="Engineering" wiidth="287" height="176" loading="lazy">
 
 <br><br><br>
+<hr>
 <figure>
     <figcaption>
         Example of an HTML code:
@@ -71,9 +75,125 @@
 <br><br><br>
 <figure>
     <img src="aboutmeicon.png" alt="Picture" Title="Engineering" height="176" loading="lazy">
-    <figcaption>Secong Image</figcaption>
+    <figcaption>Second Image</figcaption>
 </figure>
-<a></a>
+<hr>
+<article id="contact">
+    <h2>contact me</h2>
+    <p>I would like to here from you</p>
+    <form action="https://httpbin.org/get", method="get">
+        <fieldset>
+            <legend>Persnol Info</legend>
+        <p>
+            <label for="firstName">FirstName:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Enter First Name" autocomplete="on" required="true">
+        </p>
+        
+        <p>
+            <label for="lastName">lastName:</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Enter Last Name" autocomplete="on" required="true">
+        </p>
+        
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="password" required="true">
+        </p>
+
+        <p>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" placeholder="999-999-9999" required="true" pattern="[0-9]{10}">
+        </p>
+
+        <p>
+            <label for="decade">Favourite Decade:</label>
+            <input type="number" name="decade" id="decade" min="1900" max="2030" value="1980" step="10">
+        </p>
+
+        <p>
+            <label for="content">Favourite Franchise:</label>
+            <select Name="content" id="content" multiple size="3">
+                <optgroup label="comic">
+                    <option value="mcu">Marvel MCU</option>
+                    <option value="dc">DC</option>
+                </optgroup>
+                <optgroup label="saga">
+                    <option value="Fastx">Fast and Furious</option>
+                    <option value="potter" selected>Harry Potter</option>
+                    <option value="twilight">Twilight saga</option>
+                </optgroup>
+
+            </select>
+        </p>
+        
+        <p>
+            <label for="content">Favourite Franchise:</label>
+            <input type="text" Name="content" id="content" list="content-list">
+            <datalist id="content-list">
+
+                <option value="mcu">
+                <option value="dc">
+                <option value="Fast and furious">
+                <option value="Harry potter">
+                <option value="twilight">
+            
+            </datalist>
+
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Aditional Info</legend>
+        <p>
+            <label for="gender">Gender:</label><br>
+
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Femalele</label>
+
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">Other</label>
+        </p>
+        
+        <p>
+            <label for="studies">Studies:</label><br>
+            <p>
+                <input type="checkbox" name="studies" id="SSLC" value="SSLC">
+                <label for="SSLC">SSLC</label>
+            </p>
+            <p>
+                <input type="checkbox" name="studies" id="HSLC" value="HSLC">
+                <label for="HSLC">HSLC</label>
+            </p>
+            <p>
+                <input type="checkbox" name="studies" id="B.E" value="B.E">
+                <label for="B.E">B.E-CSE</label>
+            </p>
+            <p>
+                <input type="checkbox" name="studies" id="PG" value="PG">
+                <label for="PG">PG</label>
+            </p>
+            
+            
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Send me a note</legend>
+
+        <label for="message">Your Message</label>
+        <p>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your Message Here"></textarea>
+        </p>
+    </fieldset>
+
+    <br><br>
+    <button type="submit">Submit</button>
+    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">post</button>
+    <button type="reset">Reset</button>
+    <br><br>
+    </form>
+</article>
     
 </body>
 </html>

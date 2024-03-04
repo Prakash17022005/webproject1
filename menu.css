@@ -1,0 +1,17 @@
+html{
+    font-size: 40px;
+}
+body{
+    background-color:rgb(85, 83, 83);
+    color:aliceblue;
+}
+table,tr,th,td,caption
+{
+    border:1px solid;
+    font-family:'Couriser New','Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding:0.5rem;
+}
+.timing1{
+    font-family:'Courier New', Courier, monospace;
+}
